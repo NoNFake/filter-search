@@ -2,7 +2,7 @@
 
 Q: *Why Google?*
 
-A: *becouse i use google, u can addit.*
+A: *becouse i use google, u can change.*
 
 A command-line tool that helps you search Google with customized website filters. Search results will be shown only from your configured trusted websites.
 
