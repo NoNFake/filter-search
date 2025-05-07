@@ -132,7 +132,7 @@ def operation(operation):
         case _:
             pass
 
-# # print(hilter()
+
 try:
     operation(sys.argv[1])
 except:
@@ -140,7 +140,7 @@ except:
 # print(string)
 
 string = ' '.join(sys.argv[1:])
-if string  != '':
+if string not in ['', '-c', '-h']:
     webbrowser.get(browser).open_new_tab(url_search + url_filter(string) + filter())
 
 
