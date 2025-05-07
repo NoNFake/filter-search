@@ -1,7 +1,6 @@
 import sys
 import os
 import subprocess
-# import requests
 import webbrowser
 import os
 from colorama import init, Fore, Style
@@ -67,7 +66,9 @@ if f.read() == '':
 """
 
 
-chrome_path = '/usr/bin/google-chrome-stable %s'
+
+# browser = '/usr/bin/google-chrome-stable %s'
+browser = '/usr/bin/firefox'
 url_search = 'https://www.google.com/search?q='
 
 
@@ -92,6 +93,8 @@ def url_filter(string):
     return f'{string}'
 
 def operation(operation):
+    if None: pass
+
     match operation:
         case '-c':
             while True:
@@ -130,12 +133,17 @@ def operation(operation):
             pass
 
 # # print(hilter()
-operation(sys.argv[1])
+try:
+    operation(sys.argv[1])
+except:
+     pass
 # print(string)
 
 string = ' '.join(sys.argv[1:])
+if string  != '':
+    webbrowser.get(browser).open_new_tab(url_search + url_filter(string) + filter())
 
-webbrowser.get(chrome_path).open_new_tab(url_search + url_filter(string) + filter())
+
 
 
 

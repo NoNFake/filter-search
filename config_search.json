@@ -1,0 +1,12 @@
+{
+    "websites": {
+        "geeksforgeeks.org": true,
+        "w3schools.com": true,
+        "stackoverflow.com": true,
+        "github.com": true,
+        "reddit.com": true,
+        "youtube.com": true,
+        "medium.com": true,
+        "stackexchange.com": true
+    }
+}
